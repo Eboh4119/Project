@@ -13,8 +13,8 @@ export default function Home() {
 
 
   return (
-    <main className="w-[1300px]">
-      <div className="first-container h-[810px] w-[1300px] ">
+    <main className="w-[1220px]">
+      <div className="first-container h-[810px] w-[1220px] ">
         <nav>
           <div className="nav-bar text-white flex justify-between items-center py-16">
           <h2 className="pl-10 text-[19px]">Nubspace Adventure</h2>
@@ -54,12 +54,12 @@ export default function Home() {
         </div>
      
      {/* second container */}
-      <div className="world-container h-[484px] w-[1300px]">
+      <div className="world-container h-[484px] w-[1220px]">
         <Slider />
     </div>
 
 {/* third container */}
-    <div className="river-container h-[812px] w-[1300px] bg-background-three bg-contain bg-no-repeat">
+    <div className="river-container h-[812px] w-[1220px] bg-background-three bg-contain bg-no-repeat">
       <div className="text-white flex gap-20">
         <div className="word-container relative top-[430px] pl-14">
           <h3 className="text-[26px] w-[436px] h-[176px] pb-6">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
@@ -94,11 +94,11 @@ export default function Home() {
       </div>
     </div>
 
-     <div className="fourth-container w-[1300px] h-[2100px] text-black">
+     <div className="fourth-container w-[1220px] h-[1220px] text-black">
         <Great />
      </div>
 
-     <div className="last w-[1300px] h-[760px]">
+     <div className="last w-[1220px] h-[760px]">
         <Explore />
      </div>
 
