@@ -12,6 +12,10 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "first-image" : "url('/image/imageone.png')",
+          "map-image" : "url('/image/map.jpg')",
+          "background-three" : "url('/image/background 3.png')",
+          "background-four" : "url('/image/background 4.png')"
       },
     },
   },

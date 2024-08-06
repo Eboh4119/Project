@@ -2,32 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.sign:hover{
+    background-color: rgba(255, 255, 255, 0.712);
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    /* transform: scale(1.2); */
+}
+body, html {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* .second-paragraph {
+    background: linear-gradient(rgba(7, 7, 7, 0.253), rgba(6, 6, 7, 0.5));
+} */
+.first-container{
+    background-image: linear-gradient(rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5)), 
+    url('/image/imageone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: local;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.world-container{
+    background-image: linear-gradient(rgba(5, 5, 5, 0.719), rgba(2, 2, 2, 0.644)), 
+    url('/image/map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ } 
+
+ .vertical-text{
+    display: flex;
+    writing-mode: vertical-lr;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(180deg);
+ }
+ 
+ li a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.slide.fade{
+    opacity: 0;
+}
+.slide{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+.word-container p{
+    color: #C3C1C1;
+}
+.oval{
+    border: 8px dashed white;
+    background-color:  rgba(247, 242, 242, 0.281);
+}
+.circle p {
+    border-bottom: 2px dashed white;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-spacing: 20px;
+    padding-left: 4px;
+    color: #C3C1C1;
+}
+.last{
+    background-image: linear-gradient(rgba(5, 5, 5, 0.479), rgba(2, 2, 2, 0.452)), 
+    url('/image/background 4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
