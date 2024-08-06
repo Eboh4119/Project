@@ -94,7 +94,7 @@ export default function Home() {
       </div>
     </div>
 
-     <div className="fourth-container w-[1220px] h-[1220px] text-black">
+     <div className="fourth-container w-[1220px] h-[2100px] text-black">
         <Great />
      </div>
 
@@ -104,7 +104,7 @@ export default function Home() {
 
      <footer className="font-semibold h-16 flex justify-between">
       <div></div>
-      <ul className="flex items-right gap-16 pt-6 ">
+      <ul className="flex gap-16 pt-6 ">
         <li>About camp</li>
         <li>Events</li>
         <li>Animals</li>

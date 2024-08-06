@@ -24,8 +24,7 @@ body, html {
     url('/image/imageone.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    background-attachment: local;
+    background-size: cover;
 }
 
 .world-container{
