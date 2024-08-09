@@ -9,7 +9,7 @@ const note = 'your gateway to unforgettable experiences and thrilling adventures
 
 const slides =[
     {
-        text: "Explore Specials camping spot",
+        text: "Explore Specials Camping Spot",
         image: "/image/map.jpg?text=Slide+1",
         number: "01 / 03",
     
@@ -55,7 +55,7 @@ const Slider = () => {
     return (
         <div className='slider text-white'>
             <div className= {`slide flex items-center justify-around pt-12 ${isAnimating ? 'fade' : ''}`}>
-                <div className="button-click pb-8 relative bottom-20">
+                <div className="button-click pb-8 relative bottom-20 max-sm:bottom-0 max-sm:pb-2 max-sm:pl-6">
                     <p className='text-[14px]'>{slides[currentSlide].number?.toString()}</p>
                     <h5 className='text-[16px]'>Shift Landscape</h5>
                     <p className='text-[12px]'>Natural Park</p>
@@ -102,7 +102,7 @@ const Slider = () => {
                 </div>
                 </div>
 
-                <div className="explore pl-4 ml-12">
+                <div className="explore pl-4 ml-12 max-sm:ml-0">
                 <Image
                 src={'/image/Vector (1).png'}
                 alt=''
@@ -110,8 +110,8 @@ const Slider = () => {
                 height={26}
                 className = ''
                 />
-                <h3 className='py-4'>{slides[currentSlide].text}</h3>
-                <p className='text-[13px] w-[391px] h-[139px] py-4'>{note}</p>
+                <h3 className='py-4vmax-sm:py-2'>{slides[currentSlide].text}</h3>
+                <p className='text-[13px] w-[391px] h-[139px] py-4 max-sm:py-2 max-sm:max-w-[330px]'>{note}</p>
 
                 <div className='images flex gap-8 py-12'>
                 <Image
@@ -137,7 +137,7 @@ const Slider = () => {
                 </div>
                 </div>
 
-                <div>
+                <div className='side-right'>
                     <Right />
                 </div>
                 

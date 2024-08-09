@@ -5,9 +5,9 @@ function Explore(){
 
     return (
         <section className="pt-14">
-            <div className="text-center text-white">
-                <h1 className="text-[40px] pt-12 pb-4 font-bold">Your Exploration Start Here</h1>
-                <p className="text-[15px] leading-4 w-[467px] h-[92px] items-center mx-auto">{note}</p>
+            <div className="text-center text-white max-sm:max-w-[350px]">
+                <h1 className="text-[40px] pt-12 pb-4 font-bold max-sm:pl-3">Your Exploration Start Here</h1>
+                <p className="text-[15px] leading-4 w-[467px] h-[92px] items-center mx-auto max-sm:max-w-[350px]">{note}</p>
             </div>
         </section>
     );

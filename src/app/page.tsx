@@ -13,8 +13,8 @@ export default function Home() {
 
 
   return (
-    <main className="w-[1220px]">
-      <div className="first-container h-[810px] w-[1220px] ">
+    <main className="">
+      <div className="first-container w-[1280px] h-[810px]">
         <nav>
           <div className="nav-bar text-white flex justify-between items-center py-16">
           <h2 className="pl-10 text-[19px]">Nubspace Adventure</h2>
@@ -35,14 +35,14 @@ export default function Home() {
         </div>
 
         <div className="cover-text pl-20">
-          <div className=" max-w-[600px] mx-auto pt-4">
-          <h2 className="text-[40px] font-semibold">Your Adventure Begins Here!</h2>
+          <div className="cover-text-two max-w-[600px] mx-auto pt-4 ">
+          <h2 className="text-[40px] font-semibold pt-2 max-sm:pl-3">Your Adventure <span className="max-sm:pl-6">Begins Here!</span></h2>
           <p className="mx-auto text-[25px] font-[400px] px-7 text-center">Discover the great outdoors</p>
           </div>
        
 
-          <div className="second-paragraph text-white max-w-[[600px] text-center pb-10 pt-20 h-[330px]" >
-            <p className="max-w-[470px] text-sm leading-relaxed text-center mx-auto pt-20 pb-4">Discover the magic of Untouched Landscapes, Connect With Nature In It’s Purest Form, and Awaken Your Sense Of Wonder as You Navigate Through Rugged Trails, lush forest and Tequila lakes</p>
+          <div className="second-paragraph text-white max-w-[600px] text-center pb-10 pt-20 h-[330px] max-sm:pr-12" >
+            <p className="max-w-[470px] text-sm leading-relaxed text-center mx-auto pt-20 pb-4 max-sm:max-w-[300px]">Discover the magic of Untouched Landscapes, Connect With Nature In It’s Purest Form, and Awaken Your Sense Of Wonder as You Navigate Through Rugged Trails, lush forest and Tequila lakes</p>
 
             <button className=" py-1 px-4  bg-white text-black rounded-full ease-in-out duration-0.3s transform">
               Reserve Spot
@@ -54,17 +54,17 @@ export default function Home() {
         </div>
      
      {/* second container */}
-      <div className="world-container h-[484px] w-[1220px]">
+      <div className="world-container h-[484px] w-[1280px]">
         <Slider />
     </div>
 
 {/* third container */}
-    <div className="river-container h-[812px] w-[1220px] bg-background-three bg-contain bg-no-repeat">
-      <div className="text-white flex gap-20">
-        <div className="word-container relative top-[430px] pl-14">
-          <h3 className="text-[26px] w-[436px] h-[176px] pb-6">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
+    <div className="river-container h-[812px] w-[1280px] bg-background-three bg-cover bg-no-repeat">
+      <div className="text-white flex gap-20 word-container max-sm:block max-sm:gap-10">
+        <div className="word-text-container relative top-[430px] pl-14 max-sm:top-20 max-sm:pl-4">
+          <h3 className="text-[26px] w-[436px] h-[176px] pb-6 max-sm:max-w-[350px] max-sm:h-[200px] max-sm:pb-8">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
 
-          <div className="down-text flex items-center gap-8">
+          <div className="down-text flex items-center gap-8 max-sm:py-6 max-sm:max-w-[350px]">
             <div className="w-[111px] h-[120px]">
               <h2 className="text-[22px] font-extrabold">835</h2>
               <p className="w-[111px]">Daily Guided Visit</p>
@@ -87,23 +87,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="circle relative top-[200px] flex items-center">
+        <div className="circle relative top-[200px] flex items-center max-sm:top-28 max-sm:pl-4">
         <div className="w-[216px] h-[216px]  rounded-full border-spacing-10 oval"></div>
-        <p>Beautiful lake view</p>
+        <p className="max-sm:py-4">Beautiful lake view</p>
         </div>
       </div>
     </div>
 
-     <div className="fourth-container w-[1220px] h-[2100px] text-black">
+     <div className="fourth-container w-[1280px] h-[2100px] text-black max-sm:h-[2400px]">
         <Great />
      </div>
 
-     <div className="last w-[1220px] h-[760px]">
+     <div className="last h-[760px] w-[1280px]">
         <Explore />
      </div>
 
-     <footer className="font-semibold h-16 flex justify-between">
-      <div></div>
+     <footer className=" footer font-semibold h-16 flex justify-between">
+      <div className="nothing"></div>
       <ul className="flex gap-16 pt-6 ">
         <li>About camp</li>
         <li>Events</li>
