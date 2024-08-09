@@ -82,8 +82,12 @@ li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
+    /* main{
+        max-width: 500px;
+    } */
     .first-container{
         max-width: 500px;
+        background-color: black;
     }
     ul li{
         display: none;    
@@ -91,18 +95,24 @@ li a:hover::after {
     .nav-bar{
         padding-top: 20px;
         padding-bottom: 20px;
+        /* display: flex;
+        gap: 20px; */
+    }
+    .sign{
+        display: none;
     }
     .vert{
         display: none;
     }
     .cover-text{
         max-width: 400px;
-        padding-left: 10px;
+        padding-left: 30px;
+        margin: 0 auto;
     }
     .cover-text-two p{
-       padding-left: 0px;
-       max-width: 400px;
-       text-align: left;
+       padding-left: 10px;
+       max-width: 600px;
+       text-align: center;
     }
     .world-container{
         max-width: 500px;
@@ -135,7 +145,7 @@ li a:hover::after {
         max-width: 500px;
     }
     .footer{
-        display: block;
+        display: none;
     }
    
 }

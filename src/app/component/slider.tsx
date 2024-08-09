@@ -102,7 +102,7 @@ const Slider = () => {
                 </div>
                 </div>
 
-                <div className="explore pl-4 ml-12 max-sm:ml-0">
+                <div className="explore pl-4 ml-12 max-sm:ml-6 max-sm:pt-2">
                 <Image
                 src={'/image/Vector (1).png'}
                 alt=''

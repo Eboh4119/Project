@@ -14,7 +14,8 @@ export default function Home() {
 
   return (
     <main className="">
-      <div className="first-container  h-[810px]">
+      <div className="first-container w-[1280px] h-[810px]">
+        <div className="side-brake max-sm:max-w[390px]">
         <nav>
           <div className="nav-bar text-white flex justify-between items-center py-16">
           <h2 className="pl-10 text-[19px]">Nubspace Adventure</h2>
@@ -22,7 +23,7 @@ export default function Home() {
           <ul className="flex gap-8 pr-40  items-center ">
             <li><a href="#About">About Camp</a></li>
             <li><a href="#Event">Event</a></li>
-          <button className=" sign py-1 px-4 border-2 border-white border-solid rounded-full ease-in-out duration-0.3s transform">Sign in</button>
+          <button className=" sign py-1 px-4 border-2 border-white border-solid rounded-full ease-in-out duration-0.3s transform max-sm:relative max-sm:left-30px">Sign in</button>
           </ul>
           </div>  
        </nav>
@@ -34,9 +35,9 @@ export default function Home() {
           <Vertical />
         </div>
 
-        <div className="cover-text pl-20">
+        <div className="cover-text pl-20 max-sm:text-center">
           <div className="cover-text-two max-w-[600px] mx-auto pt-4 ">
-          <h2 className="text-[40px] font-semibold pt-2 max-sm:pl-3">Your Adventure <span className="max-sm:pl-6">Begins Here!</span></h2>
+          <h2 className="text-[40px] font-semibold pt-2 max-sm:pr-4">Your Adventure <span className="">Begins Here!</span></h2>
           <p className="mx-auto text-[25px] font-[400px] px-7 text-center">Discover the great outdoors</p>
           </div>
        
@@ -52,14 +53,15 @@ export default function Home() {
          </div> 
         </div>
         </div>
+      </div>
      
      {/* second container */}
-      <div className="world-container h-[484px]">
+      <div className="world-container h-[484px]  w-[1280px]">
         <Slider />
     </div>
 
 {/* third container */}
-    <div className="river-container h-[812px] bg-background-three bg-cover bg-no-repeat">
+    <div className="river-container  w-[1280px] h-[812px] bg-background-three bg-cover bg-no-repeat">
       <div className="text-white flex gap-20 word-container max-sm:block max-sm:gap-10">
         <div className="word-text-container relative top-[430px] pl-14 max-sm:top-20 max-sm:pl-4">
           <h3 className="text-[26px] w-[436px] h-[176px] pb-6 max-sm:max-w-[350px] max-sm:h-[200px] max-sm:pb-8">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
@@ -94,11 +96,11 @@ export default function Home() {
       </div>
     </div>
 
-     <div className="fourth-container  h-[2100px] text-black max-sm:h-[2400px]">
+     <div className="fourth-container  w-[1280px] h-[2100px] text-black max-sm:h-[2400px]">
         <Great />
      </div>
 
-     <div className="last h-[760px]">
+     <div className="last h-[760px] w-[1280px]">
         <Explore />
      </div>
 
