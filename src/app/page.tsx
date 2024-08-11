@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <div className="first-container w-[1280px] h-[810px]">
+      <div className="first-container h-[810px]">
         <div className="side-brake max-sm:max-w[390px]">
         <nav>
           <div className="nav-bar text-white flex justify-between items-center py-16">
@@ -56,12 +56,12 @@ export default function Home() {
       </div>
      
      {/* second container */}
-      <div className="world-container h-[484px]  w-[1280px]">
+      <div className="world-container h-[484px]">
         <Slider />
     </div>
 
 {/* third container */}
-    <div className="river-container  w-[1280px] h-[812px] bg-background-three bg-cover bg-no-repeat">
+    <div className="river-container h-[812px] bg-background-three bg-cover bg-no-repeat">
       <div className="text-white flex gap-20 word-container max-sm:block max-sm:gap-10">
         <div className="word-text-container relative top-[430px] pl-14 max-sm:top-20 max-sm:pl-4">
           <h3 className="text-[26px] w-[436px] h-[176px] pb-6 max-sm:max-w-[350px] max-sm:h-[200px] max-sm:pb-8">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
@@ -96,11 +96,11 @@ export default function Home() {
       </div>
     </div>
 
-     <div className="fourth-container  w-[1280px] h-[2100px] text-black max-sm:h-[2400px]">
+     <div className="fourth-container h-[2100px] text-black max-sm:h-[2400px]">
         <Great />
      </div>
 
-     <div className="last h-[760px] w-[1280px]">
+     <div className="last h-[760px]">
         <Explore />
      </div>
 
