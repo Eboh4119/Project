@@ -20,6 +20,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .world-container{
@@ -28,6 +29,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
  } 
 
  .vertical-text{
@@ -79,14 +81,18 @@ li a:hover::after {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 500px) {
-    /* main{
-        max-width: 500px;
-    } */
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
     .first-container{
-        max-width: 500px;
+        max-width: 100%;
         background-color: black;
     }
     ul li{
@@ -115,7 +121,7 @@ li a:hover::after {
        text-align: center;
     }
     .world-container{
-        max-width: 500px;
+        max-width: 100%;
     }
     .image-flex{
         display: none;
@@ -127,7 +133,7 @@ li a:hover::after {
         display: none;
     }
     .river-container{
-        max-width: 500px;
+        max-width: 100%;
     }
     .circle{
         display: block;
@@ -142,10 +148,12 @@ li a:hover::after {
         display: block;
     }
     .last{
-        max-width: 500px;
+        max-width: 100%;
     }
     .footer{
         display: none;
     }
-   
+   .community{
+    display: none;
+   }
 }

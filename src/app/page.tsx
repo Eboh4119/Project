@@ -13,8 +13,8 @@ export default function Home() {
 
 
   return (
-    <main className="">
-      <div className="first-container h-[810px]">
+    <main className="max-width[100%]">
+      <div className="first-container h-[810px] z-1">
         <div className="side-brake max-sm:max-w[390px]">
         <nav>
           <div className="nav-bar text-white flex justify-between items-center py-16">
@@ -56,12 +56,12 @@ export default function Home() {
       </div>
      
      {/* second container */}
-      <div className="world-container h-[484px]">
+      <div className="world-container h-[484px] z-2">
         <Slider />
     </div>
 
 {/* third container */}
-    <div className="river-container h-[812px] bg-background-three bg-cover bg-no-repeat">
+    <div className="river-container h-[812px] bg-background-three bg-cover bg-no-repeat z-3">
       <div className="text-white flex gap-20 word-container max-sm:block max-sm:gap-10">
         <div className="word-text-container relative top-[430px] pl-14 max-sm:top-20 max-sm:pl-4">
           <h3 className="text-[26px] w-[436px] h-[176px] pb-6 max-sm:max-w-[350px] max-sm:h-[200px] max-sm:pb-8">With each visit you contribute to the ongoing conversation, ensuring that the magic of nature endure for generations to come</h3>
@@ -82,7 +82,7 @@ export default function Home() {
               <p>Biodiversity species</p>
             </div>
 
-            <div className="w-[111px] h-[120px]">
+            <div className="community w-[111px] h-[120px]">
               <h2 className="text-[22px] font-extrabold">150k</h2>
               <p>Community Followers</p>
             </div>
@@ -96,11 +96,11 @@ export default function Home() {
       </div>
     </div>
 
-     <div className="fourth-container h-[2100px] text-black max-sm:h-[2400px]">
+     <div className="fourth-container h-[2100px] text-black max-sm:h-[2400px] z-4">
         <Great />
      </div>
 
-     <div className="last h-[760px]">
+     <div className="last h-[760px] z-5">
         <Explore />
      </div>
 
